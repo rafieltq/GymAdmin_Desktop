@@ -12,4 +12,8 @@
         Me.UtileriaTableAdapter.Fill(Me.GymDataDataSet.Utileria)
 
     End Sub
+
+    Private Sub TxtBuscarUtileria_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles TxtBuscarUtileria.KeyPress
+        Me.UtileriaTableAdapter.FillSearch(Me.GymDataDataSet.Utileria, TxtBuscarUtileria.Text)
+    End Sub
 End Class

@@ -12,4 +12,9 @@
         Me.ClienteTableAdapter.Fill(Me.GymDataDataSet.Cliente)
 
     End Sub
+
+    Private Sub TxtBuscarCliente_KeyUp(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles TxtBuscarCliente.KeyUp
+        'Barra de busqueda, se busca el cliente por su nombre'
+        Me.ClienteTableAdapter.FillSearch(Me.GymDataDataSet.Cliente, TxtBuscarCliente.Text)
+    End Sub
 End Class
