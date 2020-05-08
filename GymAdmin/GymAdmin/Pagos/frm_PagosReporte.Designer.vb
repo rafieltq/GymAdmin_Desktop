@@ -22,16 +22,28 @@ Partial Class frm_PagosReporte
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.ReportViewer1 = New Microsoft.Reporting.WinForms.ReportViewer()
         Me.SuspendLayout()
+        '
+        'ReportViewer1
+        '
+        Me.ReportViewer1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.ReportViewer1.LocalReport.ReportEmbeddedResource = "GymAdmin.rpt_Pagos.rdlc"
+        Me.ReportViewer1.Location = New System.Drawing.Point(0, 0)
+        Me.ReportViewer1.Name = "ReportViewer1"
+        Me.ReportViewer1.Size = New System.Drawing.Size(498, 378)
+        Me.ReportViewer1.TabIndex = 0
         '
         'frm_PagosReporte
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(603, 261)
+        Me.ClientSize = New System.Drawing.Size(498, 378)
+        Me.Controls.Add(Me.ReportViewer1)
         Me.Name = "frm_PagosReporte"
         Me.Text = "frm_PagosReporte"
         Me.ResumeLayout(False)
 
     End Sub
+    Friend WithEvents ReportViewer1 As Microsoft.Reporting.WinForms.ReportViewer
 End Class

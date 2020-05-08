@@ -15,3 +15,8 @@ C:\Users\R4FI3L\Desktop\GymAdmin\GymAdmin\GymAdmin\obj\x86\Debug\GymAdmin.frm_Pa
 C:\Users\R4FI3L\Desktop\GymAdmin\GymAdmin\GymAdmin\obj\x86\Debug\GymAdmin.frm_PagosConsultaIndividual.resources
 C:\Users\R4FI3L\Desktop\GymAdmin\GymAdmin\GymAdmin\obj\x86\Debug\GymAdmin.frm_UtileriaConsultaGeneral.resources
 C:\Users\R4FI3L\Desktop\GymAdmin\GymAdmin\GymAdmin\obj\x86\Debug\GymAdmin.frm_UtileriaConsultaIndividual.resources
+C:\Users\R4FI3L\Desktop\GymAdmin\GymAdmin\GymAdmin\obj\x86\Debug\GymAdmin.vbprojResolveAssemblyReference.cache
+C:\Users\R4FI3L\Desktop\GymAdmin\GymAdmin\GymAdmin\obj\x86\Debug\GymAdmin.frm_ClienteReporte.resources
+C:\Users\R4FI3L\Desktop\GymAdmin\GymAdmin\GymAdmin\obj\x86\Debug\RdlCompile.cache
+C:\Users\R4FI3L\Desktop\GymAdmin\GymAdmin\GymAdmin\obj\x86\Debug\RdlCompile.compiled
+C:\Users\R4FI3L\Desktop\GymAdmin\GymAdmin\GymAdmin\obj\x86\Debug\GymAdmin.frm_UtileriaReporte.resources

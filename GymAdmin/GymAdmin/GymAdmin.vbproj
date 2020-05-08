@@ -49,10 +49,13 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
@@ -173,6 +176,10 @@
     <EmbeddedResource Include="Cliente\frm_ClienteconsultaIndividual.resx">
       <DependentUpon>frm_ClienteconsultaIndividual.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Cliente\frm_ClienteReporte.resx">
+      <DependentUpon>frm_ClienteReporte.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cliente\rpt_Cliente.rdlc" />
     <EmbeddedResource Include="frm_inicio.resx">
       <DependentUpon>frm_inicio.vb</DependentUpon>
     </EmbeddedResource>
@@ -191,12 +198,17 @@
     <EmbeddedResource Include="Pagos\frm_PagosReporte.resx">
       <DependentUpon>frm_PagosReporte.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Pagos\rpt_Pagos.rdlc" />
     <EmbeddedResource Include="Utileria\frm_UtileriaConsultaGeneral.resx">
       <DependentUpon>frm_UtileriaConsultaGeneral.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Utileria\frm_UtileriaConsultaIndividual.resx">
       <DependentUpon>frm_UtileriaConsultaIndividual.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Utileria\frm_UtileriaReporte.resx">
+      <DependentUpon>frm_UtileriaReporte.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utileria\rpt_Utileria.rdlc" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
