@@ -27,6 +27,90 @@ GymAdmin
 	<summary>
   Clase de recurso fuertemente tipado, para buscar cadenas traducidas, etc.
 </summary>
+</member><member name="T:GymAdmin.GymDataDataSet.ClienteDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:GymAdmin.GymDataDataSet.PagosDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:GymAdmin.GymDataDataSet.UtileriaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:GymAdmin.GymDataDataSet.ClienteRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:GymAdmin.GymDataDataSet.PagosRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:GymAdmin.GymDataDataSet.UtileriaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:GymAdmin.GymDataDataSet.ClienteRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:GymAdmin.GymDataDataSet.PagosRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:GymAdmin.GymDataDataSet.UtileriaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:GymAdmin.GymDataDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:GymAdmin.GymDataDataSetTableAdapters.ClienteTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:GymAdmin.GymDataDataSetTableAdapters.PagosTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:GymAdmin.GymDataDataSetTableAdapters.UtileriaTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:GymAdmin.GymDataDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(GymAdmin.GymDataDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:GymAdmin.GymDataDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(GymAdmin.GymDataDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:GymAdmin.GymDataDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(GymAdmin.GymDataDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:GymAdmin.GymDataDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:GymAdmin.GymDataDataSetTableAdapters.TableAdapterManager.UpdateAll(GymAdmin.GymDataDataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:GymAdmin.GymDataDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:GymAdmin.GymDataDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:GymAdmin.GymDataDataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
 </member>
 </members>
 </doc>

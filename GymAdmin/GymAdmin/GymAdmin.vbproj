@@ -109,6 +109,11 @@
       <DependentUpon>frm_inicio.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="GymDataDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GymDataDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -177,11 +182,35 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Pagos\frm_PagosConsultaGeneral.resx">
+      <DependentUpon>frm_PagosConsultaGeneral.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pagos\frm_PagosConsultaIndividual.resx">
+      <DependentUpon>frm_PagosConsultaIndividual.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Pagos\frm_PagosReporte.resx">
       <DependentUpon>frm_PagosReporte.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Utileria\frm_UtileriaConsultaGeneral.resx">
+      <DependentUpon>frm_UtileriaConsultaGeneral.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utileria\frm_UtileriaConsultaIndividual.resx">
+      <DependentUpon>frm_UtileriaConsultaIndividual.vb</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
+    <None Include="GymDataDataSet.xsc">
+      <DependentUpon>GymDataDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="GymDataDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GymDataDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GymDataDataSet.xss">
+      <DependentUpon>GymDataDataSet.xsd</DependentUpon>
+    </None>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
