@@ -12,4 +12,8 @@
         Me.PagosTableAdapter.Fill(Me.GymDataDataSet.Pagos)
 
     End Sub
+
+    Private Sub TxtBuscarPago_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles TxtBuscarPago.KeyPress
+        Me.PagosTableAdapter.FillSearch(Me.GymDataDataSet.Pagos, TxtBuscarPago.Text)
+    End Sub
 End Class

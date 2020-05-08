@@ -23,12 +23,12 @@ Partial Class frm_ClienteconsultaGeneral
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_ClienteconsultaGeneral))
         Dim IdLabel As System.Windows.Forms.Label
         Dim NombreLabel As System.Windows.Forms.Label
         Dim ApellidoLabel As System.Windows.Forms.Label
         Dim EdadLabel As System.Windows.Forms.Label
         Dim CedulaLabel As System.Windows.Forms.Label
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_ClienteconsultaGeneral))
         Me.GymDataDataSet = New GymAdmin.GymDataDataSet()
         Me.ClienteBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.ClienteTableAdapter = New GymAdmin.GymDataDataSetTableAdapters.ClienteTableAdapter()
@@ -73,6 +73,51 @@ Partial Class frm_ClienteconsultaGeneral
         Me.ClienteBindingNavigator.SuspendLayout()
         CType(Me.ClienteDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
+        '
+        'IdLabel
+        '
+        IdLabel.AutoSize = True
+        IdLabel.Location = New System.Drawing.Point(12, 35)
+        IdLabel.Name = "IdLabel"
+        IdLabel.Size = New System.Drawing.Size(19, 13)
+        IdLabel.TabIndex = 2
+        IdLabel.Text = "Id:"
+        '
+        'NombreLabel
+        '
+        NombreLabel.AutoSize = True
+        NombreLabel.Location = New System.Drawing.Point(12, 61)
+        NombreLabel.Name = "NombreLabel"
+        NombreLabel.Size = New System.Drawing.Size(47, 13)
+        NombreLabel.TabIndex = 4
+        NombreLabel.Text = "Nombre:"
+        '
+        'ApellidoLabel
+        '
+        ApellidoLabel.AutoSize = True
+        ApellidoLabel.Location = New System.Drawing.Point(12, 87)
+        ApellidoLabel.Name = "ApellidoLabel"
+        ApellidoLabel.Size = New System.Drawing.Size(47, 13)
+        ApellidoLabel.TabIndex = 6
+        ApellidoLabel.Text = "Apellido:"
+        '
+        'EdadLabel
+        '
+        EdadLabel.AutoSize = True
+        EdadLabel.Location = New System.Drawing.Point(12, 113)
+        EdadLabel.Name = "EdadLabel"
+        EdadLabel.Size = New System.Drawing.Size(35, 13)
+        EdadLabel.TabIndex = 8
+        EdadLabel.Text = "Edad:"
+        '
+        'CedulaLabel
+        '
+        CedulaLabel.AutoSize = True
+        CedulaLabel.Location = New System.Drawing.Point(12, 139)
+        CedulaLabel.Name = "CedulaLabel"
+        CedulaLabel.Size = New System.Drawing.Size(43, 13)
+        CedulaLabel.TabIndex = 10
+        CedulaLabel.Text = "Cedula:"
         '
         'GymDataDataSet
         '
@@ -248,15 +293,6 @@ Partial Class frm_ClienteconsultaGeneral
         Me.DataGridViewTextBoxColumn5.HeaderText = "Cedula"
         Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
         '
-        'IdLabel
-        '
-        IdLabel.AutoSize = True
-        IdLabel.Location = New System.Drawing.Point(12, 35)
-        IdLabel.Name = "IdLabel"
-        IdLabel.Size = New System.Drawing.Size(19, 13)
-        IdLabel.TabIndex = 2
-        IdLabel.Text = "Id:"
-        '
         'IdTextBox
         '
         Me.IdTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ClienteBindingSource, "Id", True))
@@ -264,15 +300,6 @@ Partial Class frm_ClienteconsultaGeneral
         Me.IdTextBox.Name = "IdTextBox"
         Me.IdTextBox.Size = New System.Drawing.Size(100, 20)
         Me.IdTextBox.TabIndex = 3
-        '
-        'NombreLabel
-        '
-        NombreLabel.AutoSize = True
-        NombreLabel.Location = New System.Drawing.Point(12, 61)
-        NombreLabel.Name = "NombreLabel"
-        NombreLabel.Size = New System.Drawing.Size(47, 13)
-        NombreLabel.TabIndex = 4
-        NombreLabel.Text = "Nombre:"
         '
         'NombreTextBox
         '
@@ -282,15 +309,6 @@ Partial Class frm_ClienteconsultaGeneral
         Me.NombreTextBox.Size = New System.Drawing.Size(100, 20)
         Me.NombreTextBox.TabIndex = 5
         '
-        'ApellidoLabel
-        '
-        ApellidoLabel.AutoSize = True
-        ApellidoLabel.Location = New System.Drawing.Point(12, 87)
-        ApellidoLabel.Name = "ApellidoLabel"
-        ApellidoLabel.Size = New System.Drawing.Size(47, 13)
-        ApellidoLabel.TabIndex = 6
-        ApellidoLabel.Text = "Apellido:"
-        '
         'ApellidoTextBox
         '
         Me.ApellidoTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ClienteBindingSource, "Apellido", True))
@@ -299,15 +317,6 @@ Partial Class frm_ClienteconsultaGeneral
         Me.ApellidoTextBox.Size = New System.Drawing.Size(100, 20)
         Me.ApellidoTextBox.TabIndex = 7
         '
-        'EdadLabel
-        '
-        EdadLabel.AutoSize = True
-        EdadLabel.Location = New System.Drawing.Point(12, 113)
-        EdadLabel.Name = "EdadLabel"
-        EdadLabel.Size = New System.Drawing.Size(35, 13)
-        EdadLabel.TabIndex = 8
-        EdadLabel.Text = "Edad:"
-        '
         'EdadTextBox
         '
         Me.EdadTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ClienteBindingSource, "Edad", True))
@@ -315,15 +324,6 @@ Partial Class frm_ClienteconsultaGeneral
         Me.EdadTextBox.Name = "EdadTextBox"
         Me.EdadTextBox.Size = New System.Drawing.Size(100, 20)
         Me.EdadTextBox.TabIndex = 9
-        '
-        'CedulaLabel
-        '
-        CedulaLabel.AutoSize = True
-        CedulaLabel.Location = New System.Drawing.Point(12, 139)
-        CedulaLabel.Name = "CedulaLabel"
-        CedulaLabel.Size = New System.Drawing.Size(43, 13)
-        CedulaLabel.TabIndex = 10
-        CedulaLabel.Text = "Cedula:"
         '
         'CedulaTextBox
         '
@@ -377,7 +377,7 @@ Partial Class frm_ClienteconsultaGeneral
         '
         Me.btnNuevo.BackColor = System.Drawing.Color.Transparent
         Me.btnNuevo.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnNuevo.Location = New System.Drawing.Point(230, 128)
+        Me.btnNuevo.Location = New System.Drawing.Point(230, 127)
         Me.btnNuevo.Name = "btnNuevo"
         Me.btnNuevo.Size = New System.Drawing.Size(89, 29)
         Me.btnNuevo.TabIndex = 20
