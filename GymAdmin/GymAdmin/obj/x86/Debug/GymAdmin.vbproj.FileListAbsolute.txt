@@ -1,0 +1,12 @@
+C:\Users\R4FI3L\Desktop\GymAdmin\GymAdmin\GymAdmin\bin\Debug\GymAdmin.exe
+C:\Users\R4FI3L\Desktop\GymAdmin\GymAdmin\GymAdmin\bin\Debug\GymAdmin.pdb
+C:\Users\R4FI3L\Desktop\GymAdmin\GymAdmin\GymAdmin\bin\Debug\GymAdmin.xml
+C:\Users\R4FI3L\Desktop\GymAdmin\GymAdmin\GymAdmin\obj\x86\Debug\GymAdmin.frm_inicio.resources
+C:\Users\R4FI3L\Desktop\GymAdmin\GymAdmin\GymAdmin\obj\x86\Debug\GymAdmin.Resources.resources
+C:\Users\R4FI3L\Desktop\GymAdmin\GymAdmin\GymAdmin\obj\x86\Debug\GymAdmin.vbproj.GenerateResource.Cache
+C:\Users\R4FI3L\Desktop\GymAdmin\GymAdmin\GymAdmin\obj\x86\Debug\GymAdmin.exe
+C:\Users\R4FI3L\Desktop\GymAdmin\GymAdmin\GymAdmin\obj\x86\Debug\GymAdmin.xml
+C:\Users\R4FI3L\Desktop\GymAdmin\GymAdmin\GymAdmin\obj\x86\Debug\GymAdmin.pdb
+C:\Users\R4FI3L\Desktop\GymAdmin\GymAdmin\GymAdmin\obj\x86\Debug\GymAdmin.frm_ClienteconsultaGeneral.resources
+C:\Users\R4FI3L\Desktop\GymAdmin\GymAdmin\GymAdmin\obj\x86\Debug\GymAdmin.frm_ClienteconsultaIndividual.resources
+C:\Users\R4FI3L\Desktop\GymAdmin\GymAdmin\GymAdmin\obj\x86\Debug\GymAdmin.frm_PagosReporte.resources

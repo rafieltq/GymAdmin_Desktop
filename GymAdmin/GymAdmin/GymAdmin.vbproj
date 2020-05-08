@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FC1F9D0B-235D-4F91-A6BC-9B8517047823}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>GymAdmin.My.MyApplication</StartupObject>
+    <RootNamespace>GymAdmin</RootNamespace>
+    <AssemblyName>GymAdmin</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>GymAdmin.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>GymAdmin.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Ayuda\frm_Manual.Designer.vb">
+      <DependentUpon>frm_Manual.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ayuda\frm_Manual.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ayuda\frm_SobreNosotros.Designer.vb">
+      <DependentUpon>frm_SobreNosotros.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ayuda\frm_SobreNosotros.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cliente\frm_ClienteconsultaGeneral.Designer.vb">
+      <DependentUpon>frm_ClienteconsultaGeneral.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cliente\frm_ClienteconsultaGeneral.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cliente\frm_ClienteconsultaIndividual.Designer.vb">
+      <DependentUpon>frm_ClienteconsultaIndividual.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cliente\frm_ClienteconsultaIndividual.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cliente\frm_ClienteReporte.Designer.vb">
+      <DependentUpon>frm_ClienteReporte.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cliente\frm_ClienteReporte.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_inicio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_inicio.Designer.vb">
+      <DependentUpon>frm_inicio.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Pagos\frm_PagosConsultaGeneral.Designer.vb">
+      <DependentUpon>frm_PagosConsultaGeneral.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pagos\frm_PagosConsultaGeneral.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pagos\frm_PagosConsultaIndividual.Designer.vb">
+      <DependentUpon>frm_PagosConsultaIndividual.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pagos\frm_PagosConsultaIndividual.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pagos\frm_PagosReporte.Designer.vb">
+      <DependentUpon>frm_PagosReporte.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pagos\frm_PagosReporte.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utileria\frm_UtileriaConsultaGeneral.Designer.vb">
+      <DependentUpon>frm_UtileriaConsultaGeneral.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Utileria\frm_UtileriaConsultaGeneral.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utileria\frm_UtileriaConsultaIndividual.Designer.vb">
+      <DependentUpon>frm_UtileriaConsultaIndividual.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Utileria\frm_UtileriaConsultaIndividual.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utileria\frm_UtileriaReporte.Designer.vb">
+      <DependentUpon>frm_UtileriaReporte.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Utileria\frm_UtileriaReporte.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Cliente\frm_ClienteconsultaGeneral.resx">
+      <DependentUpon>frm_ClienteconsultaGeneral.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cliente\frm_ClienteconsultaIndividual.resx">
+      <DependentUpon>frm_ClienteconsultaIndividual.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_inicio.resx">
+      <DependentUpon>frm_inicio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pagos\frm_PagosReporte.resx">
+      <DependentUpon>frm_PagosReporte.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pesas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Salta.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
