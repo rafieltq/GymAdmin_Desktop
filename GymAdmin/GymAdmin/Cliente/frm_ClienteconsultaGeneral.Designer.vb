@@ -23,7 +23,6 @@ Partial Class frm_ClienteconsultaGeneral
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim IdLabel As System.Windows.Forms.Label
         Dim NombreLabel As System.Windows.Forms.Label
         Dim ApellidoLabel As System.Windows.Forms.Label
         Dim EdadLabel As System.Windows.Forms.Label
@@ -52,7 +51,6 @@ Partial Class frm_ClienteconsultaGeneral
         Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.IdTextBox = New System.Windows.Forms.TextBox()
         Me.NombreTextBox = New System.Windows.Forms.TextBox()
         Me.ApellidoTextBox = New System.Windows.Forms.TextBox()
         Me.EdadTextBox = New System.Windows.Forms.TextBox()
@@ -62,7 +60,6 @@ Partial Class frm_ClienteconsultaGeneral
         Me.btnBorrar = New System.Windows.Forms.Button()
         Me.btnGuardar = New System.Windows.Forms.Button()
         Me.btnNuevo = New System.Windows.Forms.Button()
-        IdLabel = New System.Windows.Forms.Label()
         NombreLabel = New System.Windows.Forms.Label()
         ApellidoLabel = New System.Windows.Forms.Label()
         EdadLabel = New System.Windows.Forms.Label()
@@ -73,15 +70,6 @@ Partial Class frm_ClienteconsultaGeneral
         Me.ClienteBindingNavigator.SuspendLayout()
         CType(Me.ClienteDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'IdLabel
-        '
-        IdLabel.AutoSize = True
-        IdLabel.Location = New System.Drawing.Point(12, 35)
-        IdLabel.Name = "IdLabel"
-        IdLabel.Size = New System.Drawing.Size(19, 13)
-        IdLabel.TabIndex = 2
-        IdLabel.Text = "Id:"
         '
         'NombreLabel
         '
@@ -293,14 +281,6 @@ Partial Class frm_ClienteconsultaGeneral
         Me.DataGridViewTextBoxColumn5.HeaderText = "Cedula"
         Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
         '
-        'IdTextBox
-        '
-        Me.IdTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ClienteBindingSource, "Id", True))
-        Me.IdTextBox.Location = New System.Drawing.Point(65, 32)
-        Me.IdTextBox.Name = "IdTextBox"
-        Me.IdTextBox.Size = New System.Drawing.Size(100, 20)
-        Me.IdTextBox.TabIndex = 3
-        '
         'NombreTextBox
         '
         Me.NombreTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ClienteBindingSource, "Nombre", True))
@@ -394,8 +374,6 @@ Partial Class frm_ClienteconsultaGeneral
         Me.Controls.Add(Me.btnBorrar)
         Me.Controls.Add(Me.btnGuardar)
         Me.Controls.Add(Me.btnNuevo)
-        Me.Controls.Add(IdLabel)
-        Me.Controls.Add(Me.IdTextBox)
         Me.Controls.Add(NombreLabel)
         Me.Controls.Add(Me.NombreTextBox)
         Me.Controls.Add(ApellidoLabel)
@@ -441,7 +419,6 @@ Partial Class frm_ClienteconsultaGeneral
     Friend WithEvents DataGridViewTextBoxColumn3 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn4 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn5 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents IdTextBox As System.Windows.Forms.TextBox
     Friend WithEvents NombreTextBox As System.Windows.Forms.TextBox
     Friend WithEvents ApellidoTextBox As System.Windows.Forms.TextBox
     Friend WithEvents EdadTextBox As System.Windows.Forms.TextBox

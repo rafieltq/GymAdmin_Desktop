@@ -14,7 +14,7 @@
     End Sub
 
     Private Sub btnNuevo_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnNuevo.Click
-        IdTextBox.Enabled = True
+
         Nombre_ClienteTextBox.Enabled = True
         FechaDateTimePicker.Enabled = True
         TipoTextBox.Enabled = True
@@ -40,7 +40,7 @@
         btnActualizar.Enabled = True
         btnGuardar.Enabled = False
         btnBorrar.Enabled = True
-        IdTextBox.Enabled = True
+
         Nombre_ClienteTextBox.Enabled = True
         FechaDateTimePicker.Enabled = True
         TipoTextBox.Enabled = True
@@ -51,12 +51,13 @@ ErrorGuardar:
     Private Sub btnBorrar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnBorrar.Click
         'Borrar el registro actual
         PagosBindingSource.RemoveCurrent()
+        MsgBox("Registro eliminado correctamente", MsgBoxStyle.Information)
         'Refrescar la tabla después del borrado
         PagosTableAdapter.Update(GymDataDataSet.Pagos)
     End Sub
 
     Private Sub btnEditar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnEditar.Click
-        IdTextBox.Enabled = True
+        btnGuardar.Enabled = True
         Nombre_ClienteTextBox.Enabled = True
         FechaDateTimePicker.Enabled = True
         TipoTextBox.Enabled = True
@@ -66,5 +67,6 @@ ErrorGuardar:
     Private Sub btnActualizar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnActualizar.Click
         'Mostrar todos los registros
         PagosTableAdapter.Fill(GymDataDataSet.Pagos)
+        MsgBox("Datos actualizados", MsgBoxStyle.Information)
     End Sub
 End Class

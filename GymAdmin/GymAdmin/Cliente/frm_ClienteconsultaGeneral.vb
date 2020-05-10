@@ -13,7 +13,7 @@
     End Sub
 
     Private Sub btnNuevo_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnNuevo.Click
-        IdTextBox.Enabled = True
+
         NombreTextBox.Enabled = True
         ApellidoTextBox.Enabled = True
         CedulaTextBox.Enabled = True
@@ -41,7 +41,7 @@
         btnActualizar.Enabled = True
         btnGuardar.Enabled = False
         btnBorrar.Enabled = True
-        IdTextBox.Enabled = True
+
         NombreTextBox.Enabled = True
         ApellidoTextBox.Enabled = True
         EdadTextBox.Enabled = True
@@ -51,21 +51,23 @@ ErrorGuardar:
     Private Sub btnBorrar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnBorrar.Click
         'Borrar el registro actual
         ClienteBindingSource.RemoveCurrent()
+        MsgBox("Registro eliminado correctamente", MsgBoxStyle.Information)
         'Refrescar la tabla después del borrado
         ClienteTableAdapter.Update(GymDataDataSet.Cliente)
     End Sub
 
     Private Sub btnEditar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnEditar.Click
         'Activar los campos de registros
-        IdTextBox.Enabled = True
         NombreTextBox.Enabled = True
         ApellidoTextBox.Enabled = True
         CedulaTextBox.Enabled = True
         EdadTextBox.Enabled = True
+        btnGuardar.Enabled = True
     End Sub
 
     Private Sub btnActualizar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnActualizar.Click
         'Mostrar todos los registros
         ClienteTableAdapter.Fill(GymDataDataSet.Cliente)
+        MsgBox("Datos actualizados", MsgBoxStyle.Information)
     End Sub
 End Class

@@ -22,7 +22,6 @@ Partial Class frm_inicio
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_inicio))
         Me.BarraMenu = New System.Windows.Forms.MenuStrip()
         Me.ClienteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ConsultaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -42,11 +41,7 @@ Partial Class frm_inicio
         Me.AyudaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ManualDeUsuarioToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SobreNosotrosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.BarraMenu.SuspendLayout()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'BarraMenu
@@ -55,7 +50,7 @@ Partial Class frm_inicio
         Me.BarraMenu.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ClienteToolStripMenuItem, Me.UtileriaToolStripMenuItem, Me.PagosToolStripMenuItem, Me.AyudaToolStripMenuItem})
         Me.BarraMenu.Location = New System.Drawing.Point(0, 0)
         Me.BarraMenu.Name = "BarraMenu"
-        Me.BarraMenu.Size = New System.Drawing.Size(685, 24)
+        Me.BarraMenu.Size = New System.Drawing.Size(701, 24)
         Me.BarraMenu.TabIndex = 0
         Me.BarraMenu.Text = "Menu"
         '
@@ -178,34 +173,12 @@ Partial Class frm_inicio
         Me.SobreNosotrosToolStripMenuItem.Size = New System.Drawing.Size(172, 22)
         Me.SobreNosotrosToolStripMenuItem.Text = "Sobre nosotros"
         '
-        'PictureBox2
-        '
-        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(337, 55)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(200, 180)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox2.TabIndex = 2
-        Me.PictureBox2.TabStop = False
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(131, 55)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(200, 180)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox1.TabIndex = 1
-        Me.PictureBox1.TabStop = False
-        '
         'frm_inicio
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.ClientSize = New System.Drawing.Size(685, 292)
-        Me.Controls.Add(Me.PictureBox2)
-        Me.Controls.Add(Me.PictureBox1)
+        Me.ClientSize = New System.Drawing.Size(701, 298)
         Me.Controls.Add(Me.BarraMenu)
         Me.MainMenuStrip = Me.BarraMenu
         Me.Name = "frm_inicio"
@@ -214,8 +187,6 @@ Partial Class frm_inicio
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.BarraMenu.ResumeLayout(False)
         Me.BarraMenu.PerformLayout()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -225,8 +196,6 @@ Partial Class frm_inicio
     Friend WithEvents UtileriaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents PagosToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents AyudaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
-    Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
     Friend WithEvents ConsultaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ConsultaIndividualToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ConsultaGeneralToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem

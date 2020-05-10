@@ -14,7 +14,7 @@
     End Sub
 
     Private Sub btnNuevo_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnNuevo.Click
-        IdTextBox.Enabled = True
+
         NombreTextBox.Enabled = True
         CategoriaTextBox.Enabled = True
         CantidadTextBox.Enabled = True
@@ -41,7 +41,7 @@
         btnActualizar.Enabled = True
         btnGuardar.Enabled = False
         btnBorrar.Enabled = True
-        IdTextBox.Enabled = True
+
         NombreTextBox.Enabled = True
         CantidadTextBox.Enabled = True
         CategoriaTextBox.Enabled = True
@@ -51,13 +51,14 @@ ErrorGuardar:
     Private Sub btnBorrar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnBorrar.Click
         'Borrar el registro actual
         UtileriaBindingSource.RemoveCurrent()
+        MsgBox("Registro eliminado correctamente", MsgBoxStyle.Information)
         'Refrescar la tabla después del borrado
         UtileriaTableAdapter.Update(GymDataDataSet.Utileria)
     End Sub
 
     Private Sub btnEditar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnEditar.Click
         'Activar los campos de registros
-        IdTextBox.Enabled = True
+        btnGuardar.Enabled = True
         NombreTextBox.Enabled = True
         CategoriaTextBox.Enabled = True
         CantidadTextBox.Enabled = True
@@ -66,5 +67,6 @@ ErrorGuardar:
     Private Sub btnActualizar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnActualizar.Click
         'Mostrar todos los registros
         UtileriaTableAdapter.Fill(GymDataDataSet.Utileria)
+        MsgBox("Datos actualizados", MsgBoxStyle.Information)
     End Sub
 End Class

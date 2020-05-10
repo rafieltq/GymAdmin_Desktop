@@ -23,7 +23,6 @@ Partial Class frm_PagosConsultaGeneral
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim IdLabel As System.Windows.Forms.Label
         Dim Nombre_ClienteLabel As System.Windows.Forms.Label
         Dim FechaLabel As System.Windows.Forms.Label
         Dim TipoLabel As System.Windows.Forms.Label
@@ -57,12 +56,10 @@ Partial Class frm_PagosConsultaGeneral
         Me.btnBorrar = New System.Windows.Forms.Button()
         Me.btnGuardar = New System.Windows.Forms.Button()
         Me.btnNuevo = New System.Windows.Forms.Button()
-        Me.IdTextBox = New System.Windows.Forms.TextBox()
         Me.Nombre_ClienteTextBox = New System.Windows.Forms.TextBox()
         Me.FechaDateTimePicker = New System.Windows.Forms.DateTimePicker()
         Me.TipoTextBox = New System.Windows.Forms.TextBox()
         Me.MontoTextBox = New System.Windows.Forms.TextBox()
-        IdLabel = New System.Windows.Forms.Label()
         Nombre_ClienteLabel = New System.Windows.Forms.Label()
         FechaLabel = New System.Windows.Forms.Label()
         TipoLabel = New System.Windows.Forms.Label()
@@ -73,15 +70,6 @@ Partial Class frm_PagosConsultaGeneral
         Me.PagosBindingNavigator.SuspendLayout()
         CType(Me.PagosDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'IdLabel
-        '
-        IdLabel.AutoSize = True
-        IdLabel.Location = New System.Drawing.Point(12, 34)
-        IdLabel.Name = "IdLabel"
-        IdLabel.Size = New System.Drawing.Size(19, 13)
-        IdLabel.TabIndex = 29
-        IdLabel.Text = "Id:"
         '
         'Nombre_ClienteLabel
         '
@@ -344,14 +332,6 @@ Partial Class frm_PagosConsultaGeneral
         Me.btnNuevo.Text = "Nuevo"
         Me.btnNuevo.UseVisualStyleBackColor = False
         '
-        'IdTextBox
-        '
-        Me.IdTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.PagosBindingSource, "Id", True))
-        Me.IdTextBox.Location = New System.Drawing.Point(100, 31)
-        Me.IdTextBox.Name = "IdTextBox"
-        Me.IdTextBox.Size = New System.Drawing.Size(200, 20)
-        Me.IdTextBox.TabIndex = 30
-        '
         'Nombre_ClienteTextBox
         '
         Me.Nombre_ClienteTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.PagosBindingSource, "Nombre_Cliente", True))
@@ -389,8 +369,6 @@ Partial Class frm_PagosConsultaGeneral
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(735, 382)
-        Me.Controls.Add(IdLabel)
-        Me.Controls.Add(Me.IdTextBox)
         Me.Controls.Add(Nombre_ClienteLabel)
         Me.Controls.Add(Me.Nombre_ClienteTextBox)
         Me.Controls.Add(FechaLabel)
@@ -446,7 +424,6 @@ Partial Class frm_PagosConsultaGeneral
     Friend WithEvents btnBorrar As System.Windows.Forms.Button
     Friend WithEvents btnGuardar As System.Windows.Forms.Button
     Friend WithEvents btnNuevo As System.Windows.Forms.Button
-    Friend WithEvents IdTextBox As System.Windows.Forms.TextBox
     Friend WithEvents Nombre_ClienteTextBox As System.Windows.Forms.TextBox
     Friend WithEvents FechaDateTimePicker As System.Windows.Forms.DateTimePicker
     Friend WithEvents TipoTextBox As System.Windows.Forms.TextBox
