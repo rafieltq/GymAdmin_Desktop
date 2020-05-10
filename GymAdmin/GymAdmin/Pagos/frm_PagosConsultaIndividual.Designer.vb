@@ -278,7 +278,7 @@ Partial Class frm_PagosConsultaIndividual
         Me.Controls.Add(Me.PagosDataGridView)
         Me.Controls.Add(Me.PagosBindingNavigator)
         Me.Name = "frm_PagosConsultaIndividual"
-        Me.Text = "frm_PagosConsultaIndividual"
+        Me.Text = "Pagos"
         CType(Me.GymDataDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PagosBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PagosBindingNavigator, System.ComponentModel.ISupportInitialize).EndInit()

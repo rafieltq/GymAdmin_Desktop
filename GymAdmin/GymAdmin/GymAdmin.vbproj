@@ -177,6 +177,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Ayuda\frm_Manual.resx">
+      <DependentUpon>frm_Manual.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ayuda\frm_SobreNosotros.resx">
+      <DependentUpon>frm_SobreNosotros.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Cliente\frm_ClienteconsultaGeneral.resx">
       <DependentUpon>frm_ClienteconsultaGeneral.vb</DependentUpon>
     </EmbeddedResource>

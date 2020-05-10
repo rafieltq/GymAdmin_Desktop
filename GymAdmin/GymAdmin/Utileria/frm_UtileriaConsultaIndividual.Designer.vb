@@ -273,7 +273,7 @@ Partial Class frm_UtileriaConsultaIndividual
         Me.Controls.Add(Me.UtileriaDataGridView)
         Me.Controls.Add(Me.UtileriaBindingNavigator)
         Me.Name = "frm_UtileriaConsultaIndividual"
-        Me.Text = "frm_UtileriaConsultaIndividual"
+        Me.Text = "Utileria"
         CType(Me.GymDataDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.UtileriaBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.UtileriaBindingNavigator, System.ComponentModel.ISupportInitialize).EndInit()

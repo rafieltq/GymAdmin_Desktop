@@ -38,10 +38,10 @@ Partial Class frm_inicio
         Me.ConsultaToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ConsultaIndividualToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ConsultaGeneralToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReporteToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
         Me.AyudaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ManualDeUsuarioToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SobreNosotrosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ReporteToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.BarraMenu.SuspendLayout()
@@ -152,6 +152,12 @@ Partial Class frm_inicio
         Me.ConsultaGeneralToolStripMenuItem2.Size = New System.Drawing.Size(176, 22)
         Me.ConsultaGeneralToolStripMenuItem2.Text = "Consulta General"
         '
+        'ReporteToolStripMenuItem2
+        '
+        Me.ReporteToolStripMenuItem2.Name = "ReporteToolStripMenuItem2"
+        Me.ReporteToolStripMenuItem2.Size = New System.Drawing.Size(121, 22)
+        Me.ReporteToolStripMenuItem2.Text = "Reporte"
+        '
         'AyudaToolStripMenuItem
         '
         Me.AyudaToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ManualDeUsuarioToolStripMenuItem, Me.SobreNosotrosToolStripMenuItem})
@@ -171,12 +177,6 @@ Partial Class frm_inicio
         Me.SobreNosotrosToolStripMenuItem.Name = "SobreNosotrosToolStripMenuItem"
         Me.SobreNosotrosToolStripMenuItem.Size = New System.Drawing.Size(172, 22)
         Me.SobreNosotrosToolStripMenuItem.Text = "Sobre nosotros"
-        '
-        'ReporteToolStripMenuItem2
-        '
-        Me.ReporteToolStripMenuItem2.Name = "ReporteToolStripMenuItem2"
-        Me.ReporteToolStripMenuItem2.Size = New System.Drawing.Size(121, 22)
-        Me.ReporteToolStripMenuItem2.Text = "Reporte"
         '
         'PictureBox2
         '
@@ -209,7 +209,9 @@ Partial Class frm_inicio
         Me.Controls.Add(Me.BarraMenu)
         Me.MainMenuStrip = Me.BarraMenu
         Me.Name = "frm_inicio"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "GYM ADMIN"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.BarraMenu.ResumeLayout(False)
         Me.BarraMenu.PerformLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()

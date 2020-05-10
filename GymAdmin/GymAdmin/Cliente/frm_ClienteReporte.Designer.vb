@@ -24,13 +24,23 @@ Partial Class frm_ClienteReporte
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim ReportDataSource1 As Microsoft.Reporting.WinForms.ReportDataSource = New Microsoft.Reporting.WinForms.ReportDataSource()
-        Me.ReportViewer1 = New Microsoft.Reporting.WinForms.ReportViewer()
-        Me.GymDataDataSet = New GymAdmin.GymDataDataSet()
         Me.ClienteBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.GymDataDataSet = New GymAdmin.GymDataDataSet()
+        Me.ReportViewer1 = New Microsoft.Reporting.WinForms.ReportViewer()
         Me.ClienteTableAdapter = New GymAdmin.GymDataDataSetTableAdapters.ClienteTableAdapter()
-        CType(Me.GymDataDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ClienteBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.GymDataDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
+        '
+        'ClienteBindingSource
+        '
+        Me.ClienteBindingSource.DataMember = "Cliente"
+        Me.ClienteBindingSource.DataSource = Me.GymDataDataSet
+        '
+        'GymDataDataSet
+        '
+        Me.GymDataDataSet.DataSetName = "GymDataDataSet"
+        Me.GymDataDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'ReportViewer1
         '
@@ -44,16 +54,6 @@ Partial Class frm_ClienteReporte
         Me.ReportViewer1.Size = New System.Drawing.Size(657, 370)
         Me.ReportViewer1.TabIndex = 0
         '
-        'GymDataDataSet
-        '
-        Me.GymDataDataSet.DataSetName = "GymDataDataSet"
-        Me.GymDataDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'ClienteBindingSource
-        '
-        Me.ClienteBindingSource.DataMember = "Cliente"
-        Me.ClienteBindingSource.DataSource = Me.GymDataDataSet
-        '
         'ClienteTableAdapter
         '
         Me.ClienteTableAdapter.ClearBeforeFill = True
@@ -65,9 +65,9 @@ Partial Class frm_ClienteReporte
         Me.ClientSize = New System.Drawing.Size(657, 370)
         Me.Controls.Add(Me.ReportViewer1)
         Me.Name = "frm_ClienteReporte"
-        Me.Text = "frm_Reporte"
-        CType(Me.GymDataDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Text = "Cliente"
         CType(Me.ClienteBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.GymDataDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub

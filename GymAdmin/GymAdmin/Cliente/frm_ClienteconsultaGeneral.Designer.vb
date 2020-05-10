@@ -407,7 +407,7 @@ Partial Class frm_ClienteconsultaGeneral
         Me.Controls.Add(Me.ClienteDataGridView)
         Me.Controls.Add(Me.ClienteBindingNavigator)
         Me.Name = "frm_ClienteconsultaGeneral"
-        Me.Text = "frm_consultaGeneral"
+        Me.Text = "Cliente"
         CType(Me.GymDataDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ClienteBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ClienteBindingNavigator, System.ComponentModel.ISupportInitialize).EndInit()

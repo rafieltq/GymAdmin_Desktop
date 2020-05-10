@@ -21,3 +21,5 @@ C:\Users\R4FI3L\Desktop\GymAdmin\GymAdmin\GymAdmin\obj\x86\Debug\RdlCompile.cach
 C:\Users\R4FI3L\Desktop\GymAdmin\GymAdmin\GymAdmin\obj\x86\Debug\RdlCompile.compiled
 C:\Users\R4FI3L\Desktop\GymAdmin\GymAdmin\GymAdmin\obj\x86\Debug\GymAdmin.frm_UtileriaReporte.resources
 C:\Users\R4FI3L\Desktop\GymAdmin\GymAdmin\GymAdmin\obj\x86\Debug\GymAdmin.frm_splash.resources
+C:\Users\R4FI3L\Desktop\GymAdmin\GymAdmin\GymAdmin\obj\x86\Debug\GymAdmin.frm_Manual.resources
+C:\Users\R4FI3L\Desktop\GymAdmin\GymAdmin\GymAdmin\obj\x86\Debug\GymAdmin.frm_SobreNosotros.resources

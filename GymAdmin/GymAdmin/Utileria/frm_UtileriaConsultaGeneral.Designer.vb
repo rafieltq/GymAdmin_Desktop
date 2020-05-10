@@ -23,11 +23,11 @@ Partial Class frm_UtileriaConsultaGeneral
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_UtileriaConsultaGeneral))
         Dim IdLabel As System.Windows.Forms.Label
         Dim NombreLabel As System.Windows.Forms.Label
         Dim CategoriaLabel As System.Windows.Forms.Label
         Dim CantidadLabel As System.Windows.Forms.Label
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_UtileriaConsultaGeneral))
         Me.GymDataDataSet = New GymAdmin.GymDataDataSet()
         Me.UtileriaBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.UtileriaTableAdapter = New GymAdmin.GymDataDataSetTableAdapters.UtileriaTableAdapter()
@@ -69,6 +69,42 @@ Partial Class frm_UtileriaConsultaGeneral
         Me.UtileriaBindingNavigator.SuspendLayout()
         CType(Me.UtileriaDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
+        '
+        'IdLabel
+        '
+        IdLabel.AutoSize = True
+        IdLabel.Location = New System.Drawing.Point(12, 35)
+        IdLabel.Name = "IdLabel"
+        IdLabel.Size = New System.Drawing.Size(19, 13)
+        IdLabel.TabIndex = 2
+        IdLabel.Text = "Id:"
+        '
+        'NombreLabel
+        '
+        NombreLabel.AutoSize = True
+        NombreLabel.Location = New System.Drawing.Point(12, 61)
+        NombreLabel.Name = "NombreLabel"
+        NombreLabel.Size = New System.Drawing.Size(47, 13)
+        NombreLabel.TabIndex = 4
+        NombreLabel.Text = "Nombre:"
+        '
+        'CategoriaLabel
+        '
+        CategoriaLabel.AutoSize = True
+        CategoriaLabel.Location = New System.Drawing.Point(12, 87)
+        CategoriaLabel.Name = "CategoriaLabel"
+        CategoriaLabel.Size = New System.Drawing.Size(55, 13)
+        CategoriaLabel.TabIndex = 6
+        CategoriaLabel.Text = "Categoria:"
+        '
+        'CantidadLabel
+        '
+        CantidadLabel.AutoSize = True
+        CantidadLabel.Location = New System.Drawing.Point(12, 113)
+        CantidadLabel.Name = "CantidadLabel"
+        CantidadLabel.Size = New System.Drawing.Size(52, 13)
+        CantidadLabel.TabIndex = 8
+        CantidadLabel.Text = "Cantidad:"
         '
         'GymDataDataSet
         '
@@ -238,15 +274,6 @@ Partial Class frm_UtileriaConsultaGeneral
         Me.DataGridViewTextBoxColumn4.HeaderText = "Cantidad"
         Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
         '
-        'IdLabel
-        '
-        IdLabel.AutoSize = True
-        IdLabel.Location = New System.Drawing.Point(12, 35)
-        IdLabel.Name = "IdLabel"
-        IdLabel.Size = New System.Drawing.Size(19, 13)
-        IdLabel.TabIndex = 2
-        IdLabel.Text = "Id:"
-        '
         'IdTextBox
         '
         Me.IdTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.UtileriaBindingSource, "Id", True))
@@ -254,15 +281,6 @@ Partial Class frm_UtileriaConsultaGeneral
         Me.IdTextBox.Name = "IdTextBox"
         Me.IdTextBox.Size = New System.Drawing.Size(100, 20)
         Me.IdTextBox.TabIndex = 3
-        '
-        'NombreLabel
-        '
-        NombreLabel.AutoSize = True
-        NombreLabel.Location = New System.Drawing.Point(12, 61)
-        NombreLabel.Name = "NombreLabel"
-        NombreLabel.Size = New System.Drawing.Size(47, 13)
-        NombreLabel.TabIndex = 4
-        NombreLabel.Text = "Nombre:"
         '
         'NombreTextBox
         '
@@ -272,15 +290,6 @@ Partial Class frm_UtileriaConsultaGeneral
         Me.NombreTextBox.Size = New System.Drawing.Size(100, 20)
         Me.NombreTextBox.TabIndex = 5
         '
-        'CategoriaLabel
-        '
-        CategoriaLabel.AutoSize = True
-        CategoriaLabel.Location = New System.Drawing.Point(12, 87)
-        CategoriaLabel.Name = "CategoriaLabel"
-        CategoriaLabel.Size = New System.Drawing.Size(55, 13)
-        CategoriaLabel.TabIndex = 6
-        CategoriaLabel.Text = "Categoria:"
-        '
         'CategoriaTextBox
         '
         Me.CategoriaTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.UtileriaBindingSource, "Categoria", True))
@@ -288,15 +297,6 @@ Partial Class frm_UtileriaConsultaGeneral
         Me.CategoriaTextBox.Name = "CategoriaTextBox"
         Me.CategoriaTextBox.Size = New System.Drawing.Size(100, 20)
         Me.CategoriaTextBox.TabIndex = 7
-        '
-        'CantidadLabel
-        '
-        CantidadLabel.AutoSize = True
-        CantidadLabel.Location = New System.Drawing.Point(12, 113)
-        CantidadLabel.Name = "CantidadLabel"
-        CantidadLabel.Size = New System.Drawing.Size(52, 13)
-        CantidadLabel.TabIndex = 8
-        CantidadLabel.Text = "Cantidad:"
         '
         'CantidadTextBox
         '
@@ -378,7 +378,7 @@ Partial Class frm_UtileriaConsultaGeneral
         Me.Controls.Add(Me.UtileriaDataGridView)
         Me.Controls.Add(Me.UtileriaBindingNavigator)
         Me.Name = "frm_UtileriaConsultaGeneral"
-        Me.Text = "frm_UtileriaConsultaGeneral"
+        Me.Text = "Utileria"
         CType(Me.GymDataDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.UtileriaBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.UtileriaBindingNavigator, System.ComponentModel.ISupportInitialize).EndInit()

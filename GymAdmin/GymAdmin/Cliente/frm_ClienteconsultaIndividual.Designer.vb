@@ -26,6 +26,8 @@ Partial Class frm_ClienteconsultaIndividual
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_ClienteconsultaIndividual))
         Me.ClienteBindingNavigator = New System.Windows.Forms.BindingNavigator(Me.components)
         Me.BindingNavigatorAddNewItem = New System.Windows.Forms.ToolStripButton()
+        Me.ClienteBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.GymDataDataSet = New GymAdmin.GymDataDataSet()
         Me.BindingNavigatorCountItem = New System.Windows.Forms.ToolStripLabel()
         Me.BindingNavigatorDeleteItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorMoveFirstItem = New System.Windows.Forms.ToolStripButton()
@@ -38,25 +40,23 @@ Partial Class frm_ClienteconsultaIndividual
         Me.BindingNavigatorSeparator2 = New System.Windows.Forms.ToolStripSeparator()
         Me.ClienteBindingNavigatorSaveItem = New System.Windows.Forms.ToolStripButton()
         Me.ClienteDataGridView = New System.Windows.Forms.DataGridView()
-        Me.TxtBuscar = New System.Windows.Forms.TextBox()
-        Me.BtnNombre = New System.Windows.Forms.Button()
-        Me.BtnApellido = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ClienteBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.GymDataDataSet = New GymAdmin.GymDataDataSet()
+        Me.TxtBuscar = New System.Windows.Forms.TextBox()
+        Me.BtnNombre = New System.Windows.Forms.Button()
+        Me.BtnApellido = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.ClienteTableAdapter = New GymAdmin.GymDataDataSetTableAdapters.ClienteTableAdapter()
         Me.TableAdapterManager = New GymAdmin.GymDataDataSetTableAdapters.TableAdapterManager()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         CType(Me.ClienteBindingNavigator, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.ClienteBindingNavigator.SuspendLayout()
-        CType(Me.ClienteDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ClienteBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GymDataDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ClienteDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -86,6 +86,16 @@ Partial Class frm_ClienteconsultaIndividual
         Me.BindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = True
         Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(23, 22)
         Me.BindingNavigatorAddNewItem.Text = "Agregar nuevo"
+        '
+        'ClienteBindingSource
+        '
+        Me.ClienteBindingSource.DataMember = "Cliente"
+        Me.ClienteBindingSource.DataSource = Me.GymDataDataSet
+        '
+        'GymDataDataSet
+        '
+        Me.GymDataDataSet.DataSetName = "GymDataDataSet"
+        Me.GymDataDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'BindingNavigatorCountItem
         '
@@ -182,6 +192,36 @@ Partial Class frm_ClienteconsultaIndividual
         Me.ClienteDataGridView.Size = New System.Drawing.Size(662, 220)
         Me.ClienteDataGridView.TabIndex = 1
         '
+        'DataGridViewTextBoxColumn1
+        '
+        Me.DataGridViewTextBoxColumn1.DataPropertyName = "Id"
+        Me.DataGridViewTextBoxColumn1.HeaderText = "Id"
+        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
+        '
+        'DataGridViewTextBoxColumn2
+        '
+        Me.DataGridViewTextBoxColumn2.DataPropertyName = "Nombre"
+        Me.DataGridViewTextBoxColumn2.HeaderText = "Nombre"
+        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
+        '
+        'DataGridViewTextBoxColumn3
+        '
+        Me.DataGridViewTextBoxColumn3.DataPropertyName = "Apellido"
+        Me.DataGridViewTextBoxColumn3.HeaderText = "Apellido"
+        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
+        '
+        'DataGridViewTextBoxColumn4
+        '
+        Me.DataGridViewTextBoxColumn4.DataPropertyName = "Edad"
+        Me.DataGridViewTextBoxColumn4.HeaderText = "Edad"
+        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
+        '
+        'DataGridViewTextBoxColumn5
+        '
+        Me.DataGridViewTextBoxColumn5.DataPropertyName = "Cedula"
+        Me.DataGridViewTextBoxColumn5.HeaderText = "Cedula"
+        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
+        '
         'TxtBuscar
         '
         Me.TxtBuscar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -217,46 +257,6 @@ Partial Class frm_ClienteconsultaIndividual
         Me.Button1.Text = "Buscar por cedula"
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'DataGridViewTextBoxColumn1
-        '
-        Me.DataGridViewTextBoxColumn1.DataPropertyName = "Id"
-        Me.DataGridViewTextBoxColumn1.HeaderText = "Id"
-        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
-        '
-        'DataGridViewTextBoxColumn2
-        '
-        Me.DataGridViewTextBoxColumn2.DataPropertyName = "Nombre"
-        Me.DataGridViewTextBoxColumn2.HeaderText = "Nombre"
-        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
-        '
-        'DataGridViewTextBoxColumn3
-        '
-        Me.DataGridViewTextBoxColumn3.DataPropertyName = "Apellido"
-        Me.DataGridViewTextBoxColumn3.HeaderText = "Apellido"
-        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
-        '
-        'DataGridViewTextBoxColumn4
-        '
-        Me.DataGridViewTextBoxColumn4.DataPropertyName = "Edad"
-        Me.DataGridViewTextBoxColumn4.HeaderText = "Edad"
-        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
-        '
-        'DataGridViewTextBoxColumn5
-        '
-        Me.DataGridViewTextBoxColumn5.DataPropertyName = "Cedula"
-        Me.DataGridViewTextBoxColumn5.HeaderText = "Cedula"
-        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
-        '
-        'ClienteBindingSource
-        '
-        Me.ClienteBindingSource.DataMember = "Cliente"
-        Me.ClienteBindingSource.DataSource = Me.GymDataDataSet
-        '
-        'GymDataDataSet
-        '
-        Me.GymDataDataSet.DataSetName = "GymDataDataSet"
-        Me.GymDataDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
         'ClienteTableAdapter
         '
         Me.ClienteTableAdapter.ClearBeforeFill = True
@@ -291,13 +291,13 @@ Partial Class frm_ClienteconsultaIndividual
         Me.Controls.Add(Me.ClienteDataGridView)
         Me.Controls.Add(Me.ClienteBindingNavigator)
         Me.Name = "frm_ClienteconsultaIndividual"
-        Me.Text = "frm_consultaIndividual"
+        Me.Text = "Cliente"
         CType(Me.ClienteBindingNavigator, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ClienteBindingNavigator.ResumeLayout(False)
         Me.ClienteBindingNavigator.PerformLayout()
-        CType(Me.ClienteDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ClienteBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GymDataDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ClienteDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()

@@ -23,12 +23,12 @@ Partial Class frm_PagosConsultaGeneral
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_PagosConsultaGeneral))
         Dim IdLabel As System.Windows.Forms.Label
         Dim Nombre_ClienteLabel As System.Windows.Forms.Label
         Dim FechaLabel As System.Windows.Forms.Label
         Dim TipoLabel As System.Windows.Forms.Label
         Dim MontoLabel As System.Windows.Forms.Label
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_PagosConsultaGeneral))
         Me.GymDataDataSet = New GymAdmin.GymDataDataSet()
         Me.PagosBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.PagosTableAdapter = New GymAdmin.GymDataDataSetTableAdapters.PagosTableAdapter()
@@ -73,6 +73,51 @@ Partial Class frm_PagosConsultaGeneral
         Me.PagosBindingNavigator.SuspendLayout()
         CType(Me.PagosDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
+        '
+        'IdLabel
+        '
+        IdLabel.AutoSize = True
+        IdLabel.Location = New System.Drawing.Point(12, 34)
+        IdLabel.Name = "IdLabel"
+        IdLabel.Size = New System.Drawing.Size(19, 13)
+        IdLabel.TabIndex = 29
+        IdLabel.Text = "Id:"
+        '
+        'Nombre_ClienteLabel
+        '
+        Nombre_ClienteLabel.AutoSize = True
+        Nombre_ClienteLabel.Location = New System.Drawing.Point(12, 60)
+        Nombre_ClienteLabel.Name = "Nombre_ClienteLabel"
+        Nombre_ClienteLabel.Size = New System.Drawing.Size(82, 13)
+        Nombre_ClienteLabel.TabIndex = 31
+        Nombre_ClienteLabel.Text = "Nombre Cliente:"
+        '
+        'FechaLabel
+        '
+        FechaLabel.AutoSize = True
+        FechaLabel.Location = New System.Drawing.Point(12, 87)
+        FechaLabel.Name = "FechaLabel"
+        FechaLabel.Size = New System.Drawing.Size(40, 13)
+        FechaLabel.TabIndex = 33
+        FechaLabel.Text = "Fecha:"
+        '
+        'TipoLabel
+        '
+        TipoLabel.AutoSize = True
+        TipoLabel.Location = New System.Drawing.Point(12, 112)
+        TipoLabel.Name = "TipoLabel"
+        TipoLabel.Size = New System.Drawing.Size(31, 13)
+        TipoLabel.TabIndex = 35
+        TipoLabel.Text = "Tipo:"
+        '
+        'MontoLabel
+        '
+        MontoLabel.AutoSize = True
+        MontoLabel.Location = New System.Drawing.Point(12, 138)
+        MontoLabel.Name = "MontoLabel"
+        MontoLabel.Size = New System.Drawing.Size(40, 13)
+        MontoLabel.TabIndex = 37
+        MontoLabel.Text = "Monto:"
         '
         'GymDataDataSet
         '
@@ -299,15 +344,6 @@ Partial Class frm_PagosConsultaGeneral
         Me.btnNuevo.Text = "Nuevo"
         Me.btnNuevo.UseVisualStyleBackColor = False
         '
-        'IdLabel
-        '
-        IdLabel.AutoSize = True
-        IdLabel.Location = New System.Drawing.Point(12, 34)
-        IdLabel.Name = "IdLabel"
-        IdLabel.Size = New System.Drawing.Size(19, 13)
-        IdLabel.TabIndex = 29
-        IdLabel.Text = "Id:"
-        '
         'IdTextBox
         '
         Me.IdTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.PagosBindingSource, "Id", True))
@@ -315,15 +351,6 @@ Partial Class frm_PagosConsultaGeneral
         Me.IdTextBox.Name = "IdTextBox"
         Me.IdTextBox.Size = New System.Drawing.Size(200, 20)
         Me.IdTextBox.TabIndex = 30
-        '
-        'Nombre_ClienteLabel
-        '
-        Nombre_ClienteLabel.AutoSize = True
-        Nombre_ClienteLabel.Location = New System.Drawing.Point(12, 60)
-        Nombre_ClienteLabel.Name = "Nombre_ClienteLabel"
-        Nombre_ClienteLabel.Size = New System.Drawing.Size(82, 13)
-        Nombre_ClienteLabel.TabIndex = 31
-        Nombre_ClienteLabel.Text = "Nombre Cliente:"
         '
         'Nombre_ClienteTextBox
         '
@@ -333,15 +360,6 @@ Partial Class frm_PagosConsultaGeneral
         Me.Nombre_ClienteTextBox.Size = New System.Drawing.Size(200, 20)
         Me.Nombre_ClienteTextBox.TabIndex = 32
         '
-        'FechaLabel
-        '
-        FechaLabel.AutoSize = True
-        FechaLabel.Location = New System.Drawing.Point(12, 87)
-        FechaLabel.Name = "FechaLabel"
-        FechaLabel.Size = New System.Drawing.Size(40, 13)
-        FechaLabel.TabIndex = 33
-        FechaLabel.Text = "Fecha:"
-        '
         'FechaDateTimePicker
         '
         Me.FechaDateTimePicker.DataBindings.Add(New System.Windows.Forms.Binding("Value", Me.PagosBindingSource, "Fecha", True))
@@ -350,15 +368,6 @@ Partial Class frm_PagosConsultaGeneral
         Me.FechaDateTimePicker.Size = New System.Drawing.Size(200, 20)
         Me.FechaDateTimePicker.TabIndex = 34
         '
-        'TipoLabel
-        '
-        TipoLabel.AutoSize = True
-        TipoLabel.Location = New System.Drawing.Point(12, 112)
-        TipoLabel.Name = "TipoLabel"
-        TipoLabel.Size = New System.Drawing.Size(31, 13)
-        TipoLabel.TabIndex = 35
-        TipoLabel.Text = "Tipo:"
-        '
         'TipoTextBox
         '
         Me.TipoTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.PagosBindingSource, "Tipo", True))
@@ -366,15 +375,6 @@ Partial Class frm_PagosConsultaGeneral
         Me.TipoTextBox.Name = "TipoTextBox"
         Me.TipoTextBox.Size = New System.Drawing.Size(200, 20)
         Me.TipoTextBox.TabIndex = 36
-        '
-        'MontoLabel
-        '
-        MontoLabel.AutoSize = True
-        MontoLabel.Location = New System.Drawing.Point(12, 138)
-        MontoLabel.Name = "MontoLabel"
-        MontoLabel.Size = New System.Drawing.Size(40, 13)
-        MontoLabel.TabIndex = 37
-        MontoLabel.Text = "Monto:"
         '
         'MontoTextBox
         '
@@ -407,7 +407,7 @@ Partial Class frm_PagosConsultaGeneral
         Me.Controls.Add(Me.PagosDataGridView)
         Me.Controls.Add(Me.PagosBindingNavigator)
         Me.Name = "frm_PagosConsultaGeneral"
-        Me.Text = "frm_PagosConsultaGeneral"
+        Me.Text = "Pagos"
         CType(Me.GymDataDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PagosBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PagosBindingNavigator, System.ComponentModel.ISupportInitialize).EndInit()
