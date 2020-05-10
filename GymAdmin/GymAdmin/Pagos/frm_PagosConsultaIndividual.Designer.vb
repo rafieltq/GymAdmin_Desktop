@@ -48,11 +48,15 @@ Partial Class frm_PagosConsultaIndividual
         Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.TxtBuscarPago = New System.Windows.Forms.TextBox()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.DtpBuscarFecha = New System.Windows.Forms.DateTimePicker()
+        Me.BtnNombre = New System.Windows.Forms.Button()
         CType(Me.GymDataDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PagosBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PagosBindingNavigator, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PagosBindingNavigator.SuspendLayout()
         CType(Me.PagosDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'GymDataDataSet
@@ -237,11 +241,39 @@ Partial Class frm_PagosConsultaIndividual
         Me.TxtBuscarPago.Size = New System.Drawing.Size(662, 26)
         Me.TxtBuscarPago.TabIndex = 3
         '
+        'GroupBox1
+        '
+        Me.GroupBox1.Controls.Add(Me.DtpBuscarFecha)
+        Me.GroupBox1.Controls.Add(Me.BtnNombre)
+        Me.GroupBox1.Location = New System.Drawing.Point(12, 41)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(409, 107)
+        Me.GroupBox1.TabIndex = 7
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "Filtro de busqueda"
+        '
+        'DtpBuscarFecha
+        '
+        Me.DtpBuscarFecha.Location = New System.Drawing.Point(6, 73)
+        Me.DtpBuscarFecha.Name = "DtpBuscarFecha"
+        Me.DtpBuscarFecha.Size = New System.Drawing.Size(216, 20)
+        Me.DtpBuscarFecha.TabIndex = 8
+        '
+        'BtnNombre
+        '
+        Me.BtnNombre.Location = New System.Drawing.Point(6, 44)
+        Me.BtnNombre.Name = "BtnNombre"
+        Me.BtnNombre.Size = New System.Drawing.Size(114, 23)
+        Me.BtnNombre.TabIndex = 3
+        Me.BtnNombre.Text = "Buscar por nombre"
+        Me.BtnNombre.UseVisualStyleBackColor = True
+        '
         'frm_PagosConsultaIndividual
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(682, 416)
+        Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.TxtBuscarPago)
         Me.Controls.Add(Me.PagosDataGridView)
         Me.Controls.Add(Me.PagosBindingNavigator)
@@ -253,6 +285,7 @@ Partial Class frm_PagosConsultaIndividual
         Me.PagosBindingNavigator.ResumeLayout(False)
         Me.PagosBindingNavigator.PerformLayout()
         CType(Me.PagosDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox1.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -281,4 +314,7 @@ Partial Class frm_PagosConsultaIndividual
     Friend WithEvents DataGridViewTextBoxColumn4 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn5 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents TxtBuscarPago As System.Windows.Forms.TextBox
+    Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
+    Friend WithEvents BtnNombre As System.Windows.Forms.Button
+    Friend WithEvents DtpBuscarFecha As System.Windows.Forms.DateTimePicker
 End Class

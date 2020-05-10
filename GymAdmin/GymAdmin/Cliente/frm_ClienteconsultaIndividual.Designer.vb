@@ -38,7 +38,10 @@ Partial Class frm_ClienteconsultaIndividual
         Me.BindingNavigatorSeparator2 = New System.Windows.Forms.ToolStripSeparator()
         Me.ClienteBindingNavigatorSaveItem = New System.Windows.Forms.ToolStripButton()
         Me.ClienteDataGridView = New System.Windows.Forms.DataGridView()
-        Me.TxtBuscarCliente = New System.Windows.Forms.TextBox()
+        Me.TxtBuscar = New System.Windows.Forms.TextBox()
+        Me.BtnNombre = New System.Windows.Forms.Button()
+        Me.BtnApellido = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -48,11 +51,13 @@ Partial Class frm_ClienteconsultaIndividual
         Me.GymDataDataSet = New GymAdmin.GymDataDataSet()
         Me.ClienteTableAdapter = New GymAdmin.GymDataDataSetTableAdapters.ClienteTableAdapter()
         Me.TableAdapterManager = New GymAdmin.GymDataDataSetTableAdapters.TableAdapterManager()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         CType(Me.ClienteBindingNavigator, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.ClienteBindingNavigator.SuspendLayout()
         CType(Me.ClienteDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ClienteBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GymDataDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'ClienteBindingNavigator
@@ -177,13 +182,40 @@ Partial Class frm_ClienteconsultaIndividual
         Me.ClienteDataGridView.Size = New System.Drawing.Size(662, 220)
         Me.ClienteDataGridView.TabIndex = 1
         '
-        'TxtBuscarCliente
+        'TxtBuscar
         '
-        Me.TxtBuscarCliente.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtBuscarCliente.Location = New System.Drawing.Point(12, 124)
-        Me.TxtBuscarCliente.Name = "TxtBuscarCliente"
-        Me.TxtBuscarCliente.Size = New System.Drawing.Size(662, 26)
-        Me.TxtBuscarCliente.TabIndex = 2
+        Me.TxtBuscar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TxtBuscar.Location = New System.Drawing.Point(12, 124)
+        Me.TxtBuscar.Name = "TxtBuscar"
+        Me.TxtBuscar.Size = New System.Drawing.Size(662, 26)
+        Me.TxtBuscar.TabIndex = 2
+        '
+        'BtnNombre
+        '
+        Me.BtnNombre.Location = New System.Drawing.Point(6, 48)
+        Me.BtnNombre.Name = "BtnNombre"
+        Me.BtnNombre.Size = New System.Drawing.Size(114, 23)
+        Me.BtnNombre.TabIndex = 3
+        Me.BtnNombre.Text = "Buscar por nombre"
+        Me.BtnNombre.UseVisualStyleBackColor = True
+        '
+        'BtnApellido
+        '
+        Me.BtnApellido.Location = New System.Drawing.Point(6, 19)
+        Me.BtnApellido.Name = "BtnApellido"
+        Me.BtnApellido.Size = New System.Drawing.Size(114, 23)
+        Me.BtnApellido.TabIndex = 4
+        Me.BtnApellido.Text = "Buscar por apellido"
+        Me.BtnApellido.UseVisualStyleBackColor = True
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(126, 19)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(114, 23)
+        Me.Button1.TabIndex = 5
+        Me.Button1.Text = "Buscar por cedula"
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'DataGridViewTextBoxColumn1
         '
@@ -237,12 +269,25 @@ Partial Class frm_ClienteconsultaIndividual
         Me.TableAdapterManager.UpdateOrder = GymAdmin.GymDataDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         Me.TableAdapterManager.UtileriaTableAdapter = Nothing
         '
+        'GroupBox1
+        '
+        Me.GroupBox1.Controls.Add(Me.BtnNombre)
+        Me.GroupBox1.Controls.Add(Me.Button1)
+        Me.GroupBox1.Controls.Add(Me.BtnApellido)
+        Me.GroupBox1.Location = New System.Drawing.Point(12, 28)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(362, 90)
+        Me.GroupBox1.TabIndex = 6
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "Filtro de busqueda"
+        '
         'frm_ClienteconsultaIndividual
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(686, 388)
-        Me.Controls.Add(Me.TxtBuscarCliente)
+        Me.Controls.Add(Me.GroupBox1)
+        Me.Controls.Add(Me.TxtBuscar)
         Me.Controls.Add(Me.ClienteDataGridView)
         Me.Controls.Add(Me.ClienteBindingNavigator)
         Me.Name = "frm_ClienteconsultaIndividual"
@@ -253,6 +298,7 @@ Partial Class frm_ClienteconsultaIndividual
         CType(Me.ClienteDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ClienteBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GymDataDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox1.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -280,5 +326,9 @@ Partial Class frm_ClienteconsultaIndividual
     Friend WithEvents DataGridViewTextBoxColumn3 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn4 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn5 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents TxtBuscarCliente As System.Windows.Forms.TextBox
+    Friend WithEvents TxtBuscar As System.Windows.Forms.TextBox
+    Friend WithEvents BtnNombre As System.Windows.Forms.Button
+    Friend WithEvents BtnApellido As System.Windows.Forms.Button
+    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
 End Class

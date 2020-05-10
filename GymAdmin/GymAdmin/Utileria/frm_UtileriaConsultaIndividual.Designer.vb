@@ -47,11 +47,15 @@ Partial Class frm_UtileriaConsultaIndividual
         Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.TxtBuscarUtileria = New System.Windows.Forms.TextBox()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.BtnNombre = New System.Windows.Forms.Button()
+        Me.BtnCategoria = New System.Windows.Forms.Button()
         CType(Me.GymDataDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.UtileriaBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.UtileriaBindingNavigator, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.UtileriaBindingNavigator.SuspendLayout()
         CType(Me.UtileriaDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'GymDataDataSet
@@ -193,9 +197,9 @@ Partial Class frm_UtileriaConsultaIndividual
         Me.UtileriaDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.UtileriaDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4})
         Me.UtileriaDataGridView.DataSource = Me.UtileriaBindingSource
-        Me.UtileriaDataGridView.Location = New System.Drawing.Point(12, 313)
+        Me.UtileriaDataGridView.Location = New System.Drawing.Point(12, 162)
         Me.UtileriaDataGridView.Name = "UtileriaDataGridView"
-        Me.UtileriaDataGridView.Size = New System.Drawing.Size(797, 220)
+        Me.UtileriaDataGridView.Size = New System.Drawing.Size(797, 196)
         Me.UtileriaDataGridView.TabIndex = 1
         '
         'DataGridViewTextBoxColumn1
@@ -225,16 +229,46 @@ Partial Class frm_UtileriaConsultaIndividual
         'TxtBuscarUtileria
         '
         Me.TxtBuscarUtileria.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtBuscarUtileria.Location = New System.Drawing.Point(12, 281)
+        Me.TxtBuscarUtileria.Location = New System.Drawing.Point(12, 130)
         Me.TxtBuscarUtileria.Name = "TxtBuscarUtileria"
         Me.TxtBuscarUtileria.Size = New System.Drawing.Size(797, 26)
         Me.TxtBuscarUtileria.TabIndex = 3
+        '
+        'GroupBox1
+        '
+        Me.GroupBox1.Controls.Add(Me.BtnNombre)
+        Me.GroupBox1.Controls.Add(Me.BtnCategoria)
+        Me.GroupBox1.Location = New System.Drawing.Point(12, 46)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(362, 61)
+        Me.GroupBox1.TabIndex = 7
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "Filtro de busqueda"
+        '
+        'BtnNombre
+        '
+        Me.BtnNombre.Location = New System.Drawing.Point(126, 19)
+        Me.BtnNombre.Name = "BtnNombre"
+        Me.BtnNombre.Size = New System.Drawing.Size(114, 23)
+        Me.BtnNombre.TabIndex = 3
+        Me.BtnNombre.Text = "Buscar por nombre"
+        Me.BtnNombre.UseVisualStyleBackColor = True
+        '
+        'BtnCategoria
+        '
+        Me.BtnCategoria.Location = New System.Drawing.Point(6, 19)
+        Me.BtnCategoria.Name = "BtnCategoria"
+        Me.BtnCategoria.Size = New System.Drawing.Size(114, 23)
+        Me.BtnCategoria.TabIndex = 4
+        Me.BtnCategoria.Text = "Buscar por categoria"
+        Me.BtnCategoria.UseVisualStyleBackColor = True
         '
         'frm_UtileriaConsultaIndividual
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(821, 545)
+        Me.ClientSize = New System.Drawing.Size(821, 370)
+        Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.TxtBuscarUtileria)
         Me.Controls.Add(Me.UtileriaDataGridView)
         Me.Controls.Add(Me.UtileriaBindingNavigator)
@@ -246,6 +280,7 @@ Partial Class frm_UtileriaConsultaIndividual
         Me.UtileriaBindingNavigator.ResumeLayout(False)
         Me.UtileriaBindingNavigator.PerformLayout()
         CType(Me.UtileriaDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox1.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -273,4 +308,7 @@ Partial Class frm_UtileriaConsultaIndividual
     Friend WithEvents DataGridViewTextBoxColumn3 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn4 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents TxtBuscarUtileria As System.Windows.Forms.TextBox
+    Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
+    Friend WithEvents BtnNombre As System.Windows.Forms.Button
+    Friend WithEvents BtnCategoria As System.Windows.Forms.Button
 End Class

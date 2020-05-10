@@ -51,6 +51,7 @@
   <ItemGroup>
     <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
     <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
@@ -150,6 +151,12 @@
     <Compile Include="Pagos\frm_PagosReporte.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Splash screen\frm_splash.Designer.vb">
+      <DependentUpon>frm_splash.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Splash screen\frm_splash.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Utileria\frm_UtileriaConsultaGeneral.Designer.vb">
       <DependentUpon>frm_UtileriaConsultaGeneral.vb</DependentUpon>
     </Compile>
@@ -199,6 +206,9 @@
       <DependentUpon>frm_PagosReporte.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pagos\rpt_Pagos.rdlc" />
+    <EmbeddedResource Include="Splash screen\frm_splash.resx">
+      <DependentUpon>frm_splash.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Utileria\frm_UtileriaConsultaGeneral.resx">
       <DependentUpon>frm_UtileriaConsultaGeneral.vb</DependentUpon>
     </EmbeddedResource>
