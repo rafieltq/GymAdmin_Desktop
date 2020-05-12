@@ -23,3 +23,7 @@ C:\Users\R4FI3L\Desktop\GymAdmin\GymAdmin\GymAdmin\obj\x86\Debug\GymAdmin.frm_Ut
 C:\Users\R4FI3L\Desktop\GymAdmin\GymAdmin\GymAdmin\obj\x86\Debug\GymAdmin.frm_splash.resources
 C:\Users\R4FI3L\Desktop\GymAdmin\GymAdmin\GymAdmin\obj\x86\Debug\GymAdmin.frm_Manual.resources
 C:\Users\R4FI3L\Desktop\GymAdmin\GymAdmin\GymAdmin\obj\x86\Debug\GymAdmin.frm_SobreNosotros.resources
+C:\Users\R4FI3L\Desktop\GymAdmin\GymAdmin\GymAdmin\bin\Debug\GymAdmin.exe.manifest
+C:\Users\R4FI3L\Desktop\GymAdmin\GymAdmin\GymAdmin\bin\Debug\GymAdmin.application
+C:\Users\R4FI3L\Desktop\GymAdmin\GymAdmin\GymAdmin\obj\x86\Debug\GymAdmin.exe.manifest
+C:\Users\R4FI3L\Desktop\GymAdmin\GymAdmin\GymAdmin\obj\x86\Debug\GymAdmin.application
