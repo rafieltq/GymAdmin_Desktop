@@ -1,0 +1,62 @@
+Boton nuevo
+
+        NombreTextBox.Enabled = True
+        ApellidoTextBox.Enabled = True
+        CedulaTextBox.Enabled = True
+        EdadTextBox.Enabled = True
+        btnBorrar.Enabled = False
+        btnEditar.Enabled = False
+        btnActualizar.Enabled = False
+        btnGuardar.Enabled = True
+        btnBorrar.Enabled = False
+        'Habilitar nuevo registro
+
+ClienteBindingSource.AddNew()
+
+Boton guardar
+
+ 'Configuración para error de guardado
+        On Error GoTo ErrorGuardar
+        'Guardar y Actualizar campos
+        ClienteBindingSource.EndEdit()
+        ClienteTableAdapter.Update(GymDataDataSet.Cliente)
+        ClienteTableAdapter.Fill(GymDataDataSet.Cliente)
+        MessageBox.Show("Guardado")
+        btnBorrar.Enabled = True
+        btnEditar.Enabled = True
+        btnActualizar.Enabled = True
+        btnGuardar.Enabled = False
+        btnBorrar.Enabled = True
+        NombreTextBox.Enabled = True
+        ApellidoTextBox.Enabled = True
+        EdadTextBox.Enabled = True
+ErrorGuardar:
+
+Boton borrar
+
+        'Borrar el registro actual
+        ClienteBindingSource.RemoveCurrent()
+        MsgBox("Registro eliminado correctamente", MsgBoxStyle.Information)
+        'Refrescar la tabla después del borrado
+        ClienteTableAdapter.Update(GymDataDataSet.Cliente)
+
+Boton editar
+
+       'Activar los campos de registros
+        NombreTextBox.Enabled = True
+        ApellidoTextBox.Enabled = True
+        CedulaTextBox.Enabled = True
+        EdadTextBox.Enabled = True
+        btnGuardar.Enabled = True
+
+Boton actualizar
+
+        'Mostrar todos los registros
+        ClienteTableAdapter.Fill(GymDataDataSet.Cliente)
+        MsgBox("Datos actualizados", MsgBoxStyle.Information)
+
+Que hacer?
+
+Cambiar los nombres de los textbox y botones por los que estan en tu programa.
+
+Y pegarlos cada uno en su respectivo boton.
